@@ -22,6 +22,10 @@ public class FurnitureType {
 	}
 
 
+	public FurnitureType(String typeName) {
+		this.typeName = typeName;
+	}
+
 	public Long getId() {
 		return id;
 	}

@@ -31,6 +31,13 @@ public class FurniturePiece {
 		super();
 	}
 
+	public FurniturePiece( String name, int price, String code, FurnitureType furnitureType) {
+		this.name = name;
+		this.price = price;
+		this.code = code;
+		this.furnitureType = furnitureType;
+	}
+
 	public Long getId() {
 		return id;
 	}
