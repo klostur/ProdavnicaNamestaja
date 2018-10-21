@@ -8,6 +8,21 @@
 		{
 			"name": "Get All Furniture",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"body": {
@@ -194,6 +209,58 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "accessToken",
+				"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImNyZWF0ZWQiOjE1NDAxNDE1NTE2MzcsImV4cCI6MTU0MDE1OTU1MX0.IFdBqeR3u9VMHvzM2ebOqnVJfE_A3u5GgTyBm3LVBqrsnK5zikA4K_iM6td9L5qkjISPnXSYyIzStTVmL0qYHg",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "ca9ed467-4bfd-4a95-aa5c-f8aab1d75c54",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "438f3e3f-5579-450e-8233-d5d7d85e6b16",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
 		}
 	]
 }
